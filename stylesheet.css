@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "sidebar body"
+        "sidebar body"
+        "sidebar body";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin:0;
+}
+
+.body {
+    grid-area: body;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-image: url('/images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover; /* Cover the entire sidebar area */
+    background-position: center; 
+    margin:0;
+}
+
+.body > p {
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form > legend {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.form-inputs {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
