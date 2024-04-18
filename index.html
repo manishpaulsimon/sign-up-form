@@ -13,44 +13,50 @@
 
     <div class="body">
         <p>This is not real online service! You know you need something like this
-            to help you realize your deepest dreams. Sign up <span>now</span> 
+            to help you realize your deepest dreams. Sign up <span class="italics">now</span> 
             to get started.
         </p>
-        <p>You know you want to.</p>
+        <p>You know <span class="italics">you</span> want to.</p>
 
         <form>
             <legend>Let's do this!</legend>
 
             <div class="form-inputs">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" placeholder="Thor">
-
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" placeholder="Odinson">
-
-                <label for="email">EMAIL</label>
-                <input type="email" id="email">
-
-                <label for="number">PHONE NUMBER</label>
-                <input type="number" id="number">
-
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password">
-
-                <label for="password">CONFIRM PASSWORD</label>
-                <input type="password" id="password">
-            </div>
-
-            <button>CREATE ACCOUNT</button>
-            <p>Already have an account <span>Log In</span></p>
-
+                <div class="input-box">       
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" placeholder="Thor">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-box">   
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" placeholder="Odinson">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-box">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email">  
+                    <p class="warning-text"></p>  
+                </div>
+               <div class="input-box">
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="number" id="number">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-box">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password">  
+                    <p class="warning-text"></p>      
+                </div>
+            </div>         
         </form>
+        <button class="create-button">CREATE ACCOUNT</button>
+        <p>Already have an account <span class="italics">Log In</span></p>
     </div>
-    
-    <div class="sidebar">
-    </div>
-
-
     <script src="script.js"></script>
 </body>
 </html>
