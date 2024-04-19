@@ -106,15 +106,13 @@ form > legend {
 }
 
 .warning-text {
-    min-height: 2px;
+    min-height: 8px;
     color: red;
-    font-size: 7px;
-    line-height: 5px;
-    visibility: hidden;
+    font-size: 9px;
+    line-height: 9px;
     display: block;
     white-space: nowrap;
     margin:0;
-    
 }
 
 .input-group {
