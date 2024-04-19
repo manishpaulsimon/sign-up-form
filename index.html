@@ -8,49 +8,63 @@
 </head>
 <body>
     <div class="sidebar">
-
+        <div>
+            <img src="/images/odin-lined.png">
+            <p>ODIN</p>
+        </div>
+        <p>photo by halie west on unsplash</p>
     </div>
 
-    <div class="body">
-        <p>This is not real online service! You know you need something like this
-            to help you realize your deepest dreams. Sign up <span>now</span> 
+    <div class="container">
+        <p class="para">This is not real online service! You know you need something like this
+            to help you realize your deepest dreams. <br>Sign up <span>now</span> 
             to get started.
         </p>
-        <p>You know you want to.</p>
+        <p class="para">You know <span class="italic">you</span> want to.</p>
 
         <form>
             <legend>Let's do this!</legend>
 
             <div class="form-inputs">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" placeholder="Thor">
+                <div class="input-group">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" placeholder="Thor">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" placeholder="Odinson">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-group">
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="number" id="number">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password">
+                    <p class="warning-text"></p>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password">
+                    <p class="warning-text"></p>
 
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" placeholder="Odinson">
+                </div>
 
-                <label for="email">EMAIL</label>
-                <input type="email" id="email">
-
-                <label for="number">PHONE NUMBER</label>
-                <input type="number" id="number">
-
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password">
-
-                <label for="password">CONFIRM PASSWORD</label>
-                <input type="password" id="password">
             </div>
-
-            <button>CREATE ACCOUNT</button>
-            <p>Already have an account <span>Log In</span></p>
-
         </form>
+        <button id="create-button">CREATE ACCOUNT</button>
+        <p>Already have an account <span>Log In</span></p>
     </div>
     
-    <div class="sidebar">
-    </div>
-
-
+</div>
     <script src="script.js"></script>
 </body>
 </html>

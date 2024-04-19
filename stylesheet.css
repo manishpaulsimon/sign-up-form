@@ -8,12 +8,19 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     margin:0;
+    background-color: rgb(249,250,251);
+
 }
 
-.body {
+.container {
     grid-area: body;
-    padding-left: 50px;
     padding-top: 50px;
+    margin-top: 50px;
+
+}
+
+.para span {
+    font-style: italic;
 }
 
 .sidebar {
@@ -21,27 +28,131 @@ body {
     background-image: url('/images/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover; /* Cover the entire sidebar area */
     background-position: center; 
-    margin:0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 100%;
+    padding: 20px 0;
 }
 
-.body > p {
+.sidebar > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(120, 120, 120, 0.5);;
+    width: 100%;
+    margin-top: 100px;
+}
+.sidebar > div:first-child p{
+    font-family: norse;
+    font-size: 72px;
+    margin: 0;
+    line-height: 1;
+}
+
+.sidebar > div:first-child img {
+    max-height: 100px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.sidebar > p {
+    font-family: roboto;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: auto;
+    text-align:center;
+    width: 100%;
+}
+
+
+.container > p {
     font-family: roboto;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
+    margin-right: 250px;
+    margin-left: 50px;
+
+}
+
+form {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    background-color: #FFFEFE;
 }
 
 form > legend {
     font-family: roboto;
     font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 10px;
+    font-weight: 600;
 }
 
 .form-inputs {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-right: 300px;
+
+    font-family: roboto;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
+.warning-text {
+    min-height: 2px;
+    color: red;
+    font-size: 7px;
+    line-height: 5px;
+    visibility: hidden;
+    display: block;
+    white-space: nowrap;
+    margin:0;
+    
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    position: relative;
+}
+
+.input-group input[type] input[type] {
+    color: #787878;
+    border: 1px solid #333;
+}
+
+.input-group input[type]:focus {
+    border-color: #282828;
+    outline: none;
+}
+
+.container > button {
+    color:white;
+    background-color: #596D48;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    border-color: #596D48;
+    padding: 10px 20px;
+}
+
+div p:last-child {
+    padding-top: 10px;
+    font-size: 13px;
+}
+div p:last-child span {
+    color: rgb(72,116,33);
+}
+
+.italic {
+    font-style: italic;
+}
 
